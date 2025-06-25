@@ -1,30 +1,17 @@
-📋 Todo List com Django
-Projeto de gerenciamento de tarefas desenvolvido em Django, com funcionalidades completas de adição, edição, atualização e exclusão de tarefas, utilizando TailwindCSS para estilização moderna e intuitiva.
+# Todo List com Django
 
-🚀 Objetivo
-Este projeto visa aplicar boas práticas no desenvolvimento web com Django, demonstrando domínio sobre:
+Este projeto é uma aplicação web para gerenciamento de tarefas, desenvolvido com o framework Django e estilizado com TailwindCSS. O objetivo principal é implementar funcionalidades completas de criação, leitura, atualização e exclusão de tarefas (CRUD).
 
-CRUD completo com Django.
+## 🚀 Funcionalidades
 
-Integração com banco de dados (SQLite).
+- ✅ **Adicionar tarefas:** Usuários podem adicionar novas tarefas.
+- ✏️ **Editar tarefas:** Tarefas existentes podem ser modificadas.
+- 🔄 **Atualizar tarefas:** Mudanças feitas nas tarefas são salvas e atualizadas no banco de dados.
+- ❌ **Excluir tarefas:** Usuários podem deletar tarefas da lista.
 
-Manipulação clara de métodos HTTP (GET e POST).
+## 📂 Estrutura do Projeto
 
-Uso eficiente da biblioteca TailwindCSS para design responsivo.
-
-✅ Funcionalidades Implementadas
-Adicionar tarefas: Inserir novas tarefas no banco de dados.
-
-Editar tarefas: Alterar conteúdos de tarefas existentes.
-
-Atualizar tarefas: Salvar alterações feitas nas tarefas.
-
-Excluir tarefas: Remover tarefas da lista e banco de dados.
-
-📂 Estrutura do Projeto
-pgsql
-Copiar
-Editar
+```
 todo-list-django
 ├── tasks
 │   ├── migrations
@@ -32,69 +19,84 @@ todo-list-django
 │   ├── apps.py
 │   ├── forms.py
 │   ├── models.py
-│   ├── tests.py
 │   ├── urls.py
 │   └── views.py
 ├── templates
 │   ├── index.html
 │   └── edit_task.html
 ├── todo_list
-│   ├── asgi.py
 │   ├── settings.py
 │   ├── urls.py
+│   ├── asgi.py
 │   └── wsgi.py
 ├── .gitignore
 ├── db.sqlite3
 ├── manage.py
 ├── requirements.txt
 └── README.md
-🛠️ Tecnologias Utilizadas
-Python
+```
 
-Django
+## 🛠️ Tecnologias
 
-SQLite
+- **Python**
+- **Django**
+- **TailwindCSS** (via CDN)
+- **SQLite**
 
-TailwindCSS
+## ⚙️ Como Executar
 
-⚙️ Como Executar o Projeto
-1. Clone o repositório:
-bash
-Copiar
-Editar
+Clone o repositório:
+
+```bash
 git clone <url-do-repositorio>
 cd todo-list-django
-2. Configure o ambiente virtual e dependências:
-bash
-Copiar
-Editar
+```
+
+Crie e ative o ambiente virtual:
+
+```bash
 python -m venv venv
 source venv/bin/activate   # Linux/macOS
 venv\Scripts\activate      # Windows
+```
+
+Instale as dependências:
+
+```bash
 pip install -r requirements.txt
-3. Execute as migrações para preparar o banco de dados:
-bash
-Copiar
-Editar
+```
+
+Execute as migrações:
+
+```bash
 python manage.py migrate
-4. Execute o servidor local:
-bash
-Copiar
-Editar
+```
+
+Inicie o servidor:
+
+```bash
 python manage.py runserver
-Acesse a aplicação no navegador em http://localhost:8000.
+```
 
-🎨 Estilização com TailwindCSS
-A interface é estilizada utilizando o CDN oficial do TailwindCSS, proporcionando um visual limpo e agradável, além de uma excelente experiência do usuário.
+Acesse o projeto:
 
-Documentação oficial: TailwindCSS.
+```
+http://localhost:8000
+```
 
-📌 Links Úteis
-Documentação Django: https://docs.djangoproject.com/
+## 🎨 Estilização
 
-Documentação TailwindCSS: https://tailwindcss.com/
+A estilização da aplicação é feita usando TailwindCSS via CDN, garantindo uma interface moderna e responsiva.
 
-📝 Informações Acadêmicas
-Disciplina: Desenvolvimento Web com Django
+## 📌 Documentações
 
-Data de Entrega: 24/06/2025
+- [Django](https://docs.djangoproject.com/)
+- [TailwindCSS](https://tailwindcss.com/)
+
+## 📅 Data de Entrega
+
+- **24/06/2025**
+
+---
+
+📌 **Nota:** Responda ao questionário sobre conceitos utilizados (estrutura Django, rotas, views, banco de dados, métodos HTTP) após a entrega do projeto na plataforma AVA.
